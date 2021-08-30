@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto+Slab&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+      crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <section id="hero">
+        <!-- navbar -->
+        <nav id="main-nav" class="nav side-margin">
+            <ul class="nav__bar">
+                <li class="nav__bar__item">
+                    <a href="index.html" class="nav__bar__link nav__bar__link--active">Home</a>
+                </li>
+                <li class="nav__bar__item">
+                    <a href="about.html" class="nav__bar__link">Services</a>
+                </li>
+                <li class="nav__bar__item">
+                    <a href="projects.html" class="nav__bar__link">News</a>
+                </li>
+                <li class="nav__bar__item">
+                    <a href="#home-c" class="nav__bar__link">Contact</a>
+                </li>
+            </ul>
+            <div class="logo">
+                <img src="Images/Zanshinlogofinal.jpg" alt="" class="nav__logo">
+            </div>
+        </nav>
+        
+        <!-- Hero section -->
+        <div class="hero side-margin">
+            <div class="hero-left">
+                <h1 class="hero__heading">Website under construction</h1>
+                <p class="hero__intro">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, qui.</p>
+                <h4 class="hero__main-button">
+                    <a href="#contact" class="hero__main-button__link">Get In Touch</a>
+                </h4>
+            </div>
+            <div class="hero-right">
+                <div class="hero-right--box1"></div>
+                <div class="hero-right--box2">
+                    <p class="hero__para">Zanshin Project Services provides an independent, flexible, freelance project management service
+                        for the property and construction industry. Bringing a professional, detailed and technically
+                        competent approach which enables more effective project delivery, reduced risk and greater
+                        cost/programme certainty.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Contacts -->
+    <section id="contact" class="contact">
+        <div class="contact__container side-margin">
+            <div class="contact__title">
+                <h2 class="contact__header">Enquiries</h2>
+                <p class="contact__para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum vero eveniet eaque iusto! Quisquam, autem?</p>
+            </div>
+            <div class="contact__form">
+                <form action="process.php" method="POST" class="contact__form-inputs">
+                    <div class="contact__form-group">
+                        <label for="name" class="contact__form-label">Name</label>
+                        <div class="contact__form-entry">
+                            <span class="contact__form-icons">
+                            <i class="fas fa-user"></i>
+                            </span>
+                            <input type="text" name="name" id="name" class="contact__form-control" placeholder="Name">
+                        </div>                        
+                    </div>
+                    <div class="contact__form-group">
+                        <label for="email" class="contact__form-label">Email</label>
+                        <div class="contact__form-entry">
+                            <span class="contact__form-icons">
+                            <i class="fas fa-envelope"></i>
+                            </span>
+                            <input type="email" name="email" id="email" class="contact__form-control" placeholder="Email">
+                        </div>                        
+                    </div>
+                    <div class="contact__form-group">
+                        <label for="message" class="contact__form-label">Message</label>
+                        <div class="contact__form-entry">
+                            <span class="contact__form-icons">
+                            <i class="fas fa-pencil-alt"></i>
+                            </span>
+                            <textarea type="text" name="message" id="message" class="contact__form-control"></textarea> 
+                        </div>                        
+                    </div>
+                    <div class="contact__button-container">
+                        <input type="submit" value="Send" class="contact__button">
+                    </div>
+                </form>
+                <div class="contact__logo">
+                <img src="Images/zanshinnowords.jpg" alt="Zanshin Logo">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer id="footer">
+        <div class="footer side-margin">
+            <div class="footer__contacts">
+                <h6>Tanya Sargent</h6>
+                <h6>Email: info@zanshinprojects.co.uk</h6>
+                <div class="footer__icons">
+                    <i class="fab fa-linkedin fa-3x"></i>
+                    <i class="fab fa-facebook-square fa-3x"></i>
+                </div>
+            </div>
+            <div class="footer__cright">Copyright &copy; 2021</div>
+            
+        </div>
+    </footer>
+</body>
+
+</html>

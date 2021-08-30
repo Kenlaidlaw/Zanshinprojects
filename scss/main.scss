@@ -1,0 +1,400 @@
+// utilities
+$primary-color: #badeff;
+$secondary-color: #4f5a65;
+$tertiary-color: #c4c4c4;
+
+$main-font: "Roboto Slab", serif;
+$headings-font: "Poppins", sans-serif;
+
+// Website standard settings
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $headings-font;
+}
+
+p {
+  color: $secondary-color;
+  font-family: $main-font;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.side-margin {
+  padding: 0 8rem;
+}
+
+// navigation bar
+.nav {
+  display: flex;
+  justify-content: space-between;
+
+  //menu items
+  &__bar {
+    display: flex;
+    padding: 1rem 0;
+
+    &__item {
+      padding: 0 3rem 0 0;
+      font-size: 1.2rem;
+    }
+
+    //link items and states
+    &__link {
+      color: $secondary-color;
+      font-family: $headings-font;
+
+      &--active {
+        border-bottom: 3px #fff solid;
+      }
+    }
+
+    &__link:hover {
+      color: #fff;
+      border-bottom: 3px $primary-color solid;
+    }
+  }
+
+  //navbar logo
+  &__logo {
+    width: 350px;
+    height: 120px;
+  }
+}
+
+// Hero section
+#hero {
+  background: url(/Images/lance-anderson-QdAAasrZhdk-unsplash.jpg) no-repeat
+    center center/cover;
+  height: 100vh;
+  width: 100vw;
+}
+
+.hero {
+  display: flex;
+  // left side
+  &-left {
+    width: 50vw;
+  }
+
+  &__heading {
+    padding-top: 12rem;
+    font-size: 2rem;
+    color: $secondary-color;
+  }
+
+  &__intro {
+    font-size: 1.5rem;
+  }
+
+  &__main-button {
+    padding-top: 2rem;
+
+    &__link {
+      background-color: $secondary-color;
+      color: $primary-color;
+      padding: 8px 16px;
+      border-radius: 10px;
+    }
+    &__link:hover {
+      background-color: #fff;
+      color: $secondary-color;
+      padding: 0.75rem 1.25rem;
+      border-radius: 10px;
+      border: 1px $secondary-color solid;
+    }
+  }
+
+  //rightside
+  &-right {
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+    &--box1 {
+      width: 50%;
+      height: 300px;
+      margin-top: 50px;
+      background: linear-gradient(
+        180deg,
+        #c4c4c4 0%,
+        rgba(196, 196, 196, 0) 100%
+      );
+      border-radius: 25px;
+    }
+
+    &--box2 {
+      max-width: 440px;
+      min-height: 300px;
+      margin-top: -200px;
+      margin-right: 100px;
+      background: #badeff;
+      opacity: 0.8;
+      border-radius: 25px;
+    }
+  }
+  &__para {
+    font-weight: 600;
+    font-size: 1.1rem;
+    padding: 2rem 2rem;
+    text-align: center;
+  }
+}
+
+//Contact section
+.contact {
+  background-color: $secondary-color;
+
+  &__title {
+    text-align: center;
+    padding: 1rem;
+  }
+
+  &__header,
+  &__para {
+    color: $primary-color;
+    margin: 0;
+    padding: 0.5rem 0;
+  }
+
+  &__form {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    color: $primary-color;
+    padding: 1rem 0 2rem 0;
+
+    &-inputs {
+      width: 50%;
+    }
+
+    &-group {
+      padding: 0.5rem 0;
+    }
+    &-label {
+      font-size: 1.5rem;
+    }
+    &-icons {
+      font-size: 2rem;
+      vertical-align: middle;
+      padding-right: 2rem;
+    }
+    &-entry {
+      padding: 4px;
+    }
+
+    &-control {
+      vertical-align: middle;
+      height: 40px;
+      border: #b3d9ff 2px solid;
+      width: 80%;
+    }
+  }
+
+  #message {
+    height: 80px;
+  }
+
+  &__logo {
+    width: 50%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 3rem;
+    padding-left: 8rem;
+  }
+
+  &__button {
+    width: 40%;
+    height: 40px;
+    padding: 4px 8px;
+    margin: 2rem 0;
+    background-color: $primary-color;
+    color: $secondary-color;
+    border-radius: 10px;
+
+    &-container {
+      display: flex;
+      justify-content: center;
+    }
+  }
+}
+
+//Footer
+#footer {
+  background-color: #f4f4f4;
+}
+.footer {
+  display: flex;
+  justify-content: space-between;
+
+  &__contacts h6 {
+    color: $secondary-color;
+    font-size: 1rem;
+    margin: 0;
+    padding: 0.5rem 0 0 0;
+  }
+
+  &__cright {
+    color: $secondary-color;
+    font-size: 2rem;
+    justify-content: center;
+    padding: 3rem;
+  }
+
+  &__icons i {
+    color: $primary-color;
+    padding: 0.5rem 1rem 0.5rem 0;
+  }
+  &__icons i:hover {
+    color: #fff;
+    padding: 0.5rem 1rem 0.5rem 0;
+  }
+}
+
+// Media Queries
+
+@media (max-width: 1040px) {
+  .nav {
+    //menu items
+    &__bar {
+      display: flex;
+      padding: 1rem 0;
+
+      &__item {
+        padding: 0 2rem 0 0;
+        font-size: 1.4rem;
+      }
+    }
+    &__logo {
+      width: 200px;
+      height: 75px;
+    }
+  }
+
+  .hero {
+    //rightside
+    &-right--box1 {
+      margin-top: 50px;
+    }
+
+    &--box2 {
+      margin-top: -250px;
+      width: 90%;
+    }
+
+    &__para {
+      padding: 0.5rem 0.5rem;
+      font-size: 0.85rem;
+    }
+  }
+}
+
+@media (max-width: 760px) {
+  .side-margin {
+    padding: 0;
+  }
+
+  .nav {
+    flex-direction: column-reverse;
+    align-items: center;
+
+    //menu items
+    &__bar {
+      display: flex;
+      padding: 0.25rem 0;
+
+      &__item {
+        padding: 0 0.5rem 0 0;
+        font-size: 1rem;
+      }
+    }
+    &__logo {
+      width: 100px;
+      height: 40px;
+      display: block;
+      background-color: #fff;
+    }
+  }
+
+  .hero-right--box1 {
+    display: none;
+  }
+  .hero {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+
+    // left side
+    &-left {
+      width: 100vw;
+      text-align: center;
+    }
+
+    &__heading {
+      padding-top: 2rem;
+      color: black;
+    }
+
+    &__intro {
+      color: #fff;
+    }
+
+    &__main-button {
+      margin: auto;
+      max-width: 150px;
+    }
+
+    //rightside
+    &-right {
+      width: 100vw;
+
+      &--box2 {
+        max-width: 100%;
+        min-height: 0px;
+        margin: 0;
+        border-radius: 0px;
+        padding: 1rem;
+      }
+    }
+    &__para {
+      font-family: $main-font;
+      font-weight: 600;
+      font-size: 1rem;
+      padding: 1rem 1.5rem;
+      text-align: center;
+    }
+  }
+
+  //contact section
+  .contact__logo {
+    display: none;
+  }
+
+  .contact__form-inputs {
+    width: 100%;
+  }
+
+  //footer
+  .footer__cright {
+    padding: 1rem;
+    font-size: 1rem;
+  }
+}
