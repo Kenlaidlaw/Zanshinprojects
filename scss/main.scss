@@ -8,10 +8,11 @@ $headings-font: "Poppins", sans-serif;
 
 // Website standard settings
 body {
-  margin: 0;
+  margin: auto;
   padding: 0;
   box-sizing: border-box;
   overflow-x: hidden;
+  // max-width: 1080px;
 }
 
 h1,
@@ -52,7 +53,7 @@ ul {
 
     &__item {
       padding: 0 3rem 0 0;
-      font-size: 1.2rem;
+      font-size: 1.5rem;
     }
 
     //link items and states
@@ -82,7 +83,8 @@ ul {
 #hero {
   background: url(/Images/lance-anderson-QdAAasrZhdk-unsplash.jpg) no-repeat
     center center/cover;
-  height: 100vh;
+  height: 94vh;
+  // max-width: 1080px;
   width: 100vw;
 }
 
@@ -146,7 +148,7 @@ ul {
       margin-top: -200px;
       margin-right: 100px;
       background: #badeff;
-      opacity: 0.8;
+      opacity: 0.9;
       border-radius: 25px;
     }
   }
@@ -156,6 +158,27 @@ ul {
     padding: 2rem 2rem;
     text-align: center;
   }
+}
+
+//Banner section
+#banner {
+  background-color: #fff;
+}
+
+.banner_content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 1.1rem;
+  font-weight: 600;
+  font-family: $headings-font;
+}
+
+.banner_content .minisym {
+  color: $primary-color;
+  font-size: 2rem;
+  padding-left: 20px;
 }
 
 //Contact section
@@ -171,7 +194,7 @@ ul {
   &__para {
     color: $primary-color;
     margin: 0;
-    padding: 0.5rem 0;
+    padding: 0.5rem 0 0 0;
   }
 
   &__form {
@@ -179,7 +202,7 @@ ul {
     display: flex;
     justify-content: space-between;
     color: $primary-color;
-    padding: 1rem 0 2rem 0;
+    padding: 0 0 2rem 0;
 
     &-inputs {
       width: 50%;
@@ -193,8 +216,8 @@ ul {
     }
     &-icons {
       font-size: 2rem;
-      vertical-align: middle;
-      padding-right: 2rem;
+      vertical-align: bottom;
+      padding-right: 4rem;
     }
     &-entry {
       padding: 4px;
@@ -222,13 +245,14 @@ ul {
   }
 
   &__button {
-    width: 40%;
+    width: 60%;
     height: 40px;
     padding: 4px 8px;
     margin: 2rem 0;
     background-color: $primary-color;
     color: $secondary-color;
     border-radius: 10px;
+    font-size: 1.5rem;
 
     &-container {
       display: flex;
@@ -239,7 +263,7 @@ ul {
 
 //Footer
 #footer {
-  background-color: #f4f4f4;
+  background-color: $tertiary-color;
 }
 .footer {
   display: flex;

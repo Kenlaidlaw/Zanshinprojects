@@ -1,5 +1,5 @@
 body {
-  margin: 0;
+  margin: auto;
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -50,7 +50,7 @@ ul {
 
 .nav__bar__item {
   padding: 0 3rem 0 0;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
 }
 
 .nav__bar__link {
@@ -74,7 +74,7 @@ ul {
 
 #hero {
   background: url(/Images/lance-anderson-QdAAasrZhdk-unsplash.jpg) no-repeat center center/cover;
-  height: 100vh;
+  height: 94vh;
   width: 100vw;
 }
 
@@ -146,7 +146,7 @@ ul {
   margin-top: -200px;
   margin-right: 100px;
   background: #badeff;
-  opacity: 0.8;
+  opacity: 0.9;
   border-radius: 25px;
 }
 
@@ -155,6 +155,34 @@ ul {
   font-size: 1.1rem;
   padding: 2rem 2rem;
   text-align: center;
+}
+
+#banner {
+  background-color: #fff;
+}
+
+.banner_content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1.1rem;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+}
+
+.banner_content .minisym {
+  color: #badeff;
+  font-size: 2rem;
+  padding-left: 20px;
 }
 
 .contact {
@@ -169,7 +197,7 @@ ul {
 .contact__header, .contact__para {
   color: #badeff;
   margin: 0;
-  padding: 0.5rem 0;
+  padding: 0.5rem 0 0 0;
 }
 
 .contact__form {
@@ -181,7 +209,7 @@ ul {
       -ms-flex-pack: justify;
           justify-content: space-between;
   color: #badeff;
-  padding: 1rem 0 2rem 0;
+  padding: 0 0 2rem 0;
 }
 
 .contact__form-inputs {
@@ -198,8 +226,8 @@ ul {
 
 .contact__form-icons {
   font-size: 2rem;
-  vertical-align: middle;
-  padding-right: 2rem;
+  vertical-align: bottom;
+  padding-right: 4rem;
 }
 
 .contact__form-entry {
@@ -231,13 +259,14 @@ ul {
 }
 
 .contact__button {
-  width: 40%;
+  width: 60%;
   height: 40px;
   padding: 4px 8px;
   margin: 2rem 0;
   background-color: #badeff;
   color: #4f5a65;
   border-radius: 10px;
+  font-size: 1.5rem;
 }
 
 .contact__button-container {
@@ -250,7 +279,7 @@ ul {
 }
 
 #footer {
-  background-color: #f4f4f4;
+  background-color: #c4c4c4;
 }
 
 .footer {

@@ -26,7 +26,10 @@
                     <a href="about.html" class="nav__bar__link">Services</a>
                 </li>
                 <li class="nav__bar__item">
-                    <a href="projects.html" class="nav__bar__link">News</a>
+                    <a href="projects.html" class="nav__bar__link">Case Studies</a>
+                </li>
+                <li class="nav__bar__item">
+                    <a href="projects.html" class="nav__bar__link">About</a>
                 </li>
                 <li class="nav__bar__item">
                     <a href="#home-c" class="nav__bar__link">Contact</a>
@@ -40,8 +43,8 @@
         <!-- Hero section -->
         <div class="hero side-margin">
             <div class="hero-left">
-                <h1 class="hero__heading">Website under construction</h1>
-                <p class="hero__intro">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, qui.</p>
+                <h1 class="hero__heading">Zanshin Project Services</h1>
+                <p class="hero__intro">Professional, flexible services for your preconstruction needs.</p>
                 <h4 class="hero__main-button">
                     <a href="#contact" class="hero__main-button__link">Get In Touch</a>
                 </h4>
@@ -51,19 +54,36 @@
                 <div class="hero-right--box2">
                     <p class="hero__para">Zanshin Project Services provides an independent, flexible, freelance project management service
                         for the property and construction industry. Bringing a professional, detailed and technically
-                        competent approach which enables more effective project delivery, reduced risk and greater
+                        competent approach which enables more effective project delivery, reduced risk and improved
                         cost/programme certainty.
                     </p>
                 </div>
             </div>
         </div>
     </section>
+    <!-- White banner at bottom of screen photo -->
+    <section id="banner">
+        <div class="banner_content">
+            <p>Fuel Retail </p> 
+            <span><i class="fas fa-chevron-circle-right minisym"></i> </span>
+            <p>EV Charging </p> 
+            <span><i class="fas fa-chevron-circle-right minisym"></i> </span>
+            <p>Roadside Development </p>
+            <span><i class="fas fa-chevron-circle-right minisym"></i> </span>
+            <p>Drive Thru' </p>
+            <span><i class="fas fa-chevron-circle-right minisym"></i> </span>
+            <p>Multi-site </p>
+            <span><i class="fas fa-chevron-circle-right minisym"></i> </span>
+            <p>Commercial development</p>
+        </div>
+    </section>
+
     <!-- Contacts -->
     <section id="contact" class="contact">
         <div class="contact__container side-margin">
             <div class="contact__title">
                 <h2 class="contact__header">Enquiries</h2>
-                <p class="contact__para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum vero eveniet eaque iusto! Quisquam, autem?</p>
+                <p class="contact__para">If you would like more information on what we can provide for you please use the callback form below.</p>
             </div>
             <div class="contact__form">
                 <form action="process.php" method="POST" class="contact__form-inputs">
@@ -112,13 +132,44 @@
                 <h6>Email: info@zanshinprojects.co.uk</h6>
                 <div class="footer__icons">
                     <i class="fab fa-linkedin fa-3x"></i>
-                    <i class="fab fa-facebook-square fa-3x"></i>
                 </div>
             </div>
-            <div class="footer__cright">Copyright &copy; 2021</div>
+            <div class="footer__cright">Copyright &copy;<span id="year"></span></div>
             
         </div>
     </footer>
+
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+    crossorigin="anonymous"></script>
+
+    <script>
+        // Get the current year for the copyright
+        $('#year').text(new Date().getFullYear());
+    
+        // INit scrollspy
+        $('body').scrollspy({ target: '#main-nav' });
+    
+         // Smooth Scrolling
+         $("#main-nav a").on('click', function (event) {
+          if (this.hash !== "") {
+            event.preventDefault();
+    
+            const hash = this.hash;
+    
+            $('html, body').animate({
+              scrollTop: $(hash).offset().top
+            }, 800, function () {
+    
+              window.location.hash = hash;
+            });
+          }
+        });
+      </script>
+     
 </body>
 
 </html>
